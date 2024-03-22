@@ -1,0 +1,37 @@
+{
+	"formData": {
+		"fields": [
+			{
+				"type": "Text",
+				"name": "eName",
+				"label": "First Name",
+				"value": "",
+				"required": true 
+			},
+			{
+				"type": "Text",
+				"name": "fName",
+				"label": "Last Name",
+				"value": "",
+				"required": false
+			},
+			{
+				"type": "Email",
+				"name": "email",
+				"label": "Email Address",
+				"value": "",
+				"required": true 
+			},
+			{
+				"type": "Number",
+				"name": "rating",
+				"label": "Rating",
+				"value": "",
+				"required": true 
+			}
+			
+			
+	
+		]
+	}
+}

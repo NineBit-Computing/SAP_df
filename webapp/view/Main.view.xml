@@ -1,0 +1,21 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout" controllerName="com.myorg.myapp.controller.Main">
+    <Page title="Dynamic Form" class="sapUiContentPadding">
+        <content>
+            <VBox class="centerContainer">
+                <Label text="User Preference" class="formHeading" />
+                <VBox id="formContainer" items="{path: 'invoice>/formData/fields'}">
+                    <items>
+                        <l:VerticalLayout width="100%">
+                            
+                                <Label text="{invoice>label}" design="Bold" required="{= ${invoice>required} }" />
+                                <!-- <Text text="*" visible="{= ${invoice>required} }" class="redStar" /> -->
+                            
+                            <Input class="inputWidth inputHeight" value="{invoice>value}" type="{invoice>type}" />
+                        </l:VerticalLayout>
+                    </items>
+                </VBox>
+                <Button text="Save" press="onSave" />
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>
